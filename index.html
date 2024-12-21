@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .body-container{
+        height: 300px;
+        width: 800px;
+        margin: 50px auto;
+        border-radius: 20px;
+       
+        display: flex;
+      flex-direction: row;
+    
+
+    }
+    .stud-part{
+        width: 40%;
+       border: 2px solid;
+        border-radius: 20px;
+        border-right: 5px dashed black;
+        padding-left: 20px;
+        box-shadow: 0 0 10px 5px rgb(119, 119, 160);
+       background-color: rgb(94, 153, 94);
+    }
+    .event-part{
+        width: 60%;
+        background-color: rgb(161, 151, 94);
+        border-radius: 20px;
+        border: 2px solid;
+        border-left: none;
+        padding-left: 20px;
+        box-shadow: 0 0 10px 5px rgb(68, 68, 105);
+       
+    }
+    .ticket-no{
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    }
+    .event-title{
+font-size: 20px;
+    }
+    /* Mobile */
+    @media ( max-width:600px){
+        .body-container{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+        .stud-part{
+            width:450px;
+            border: 2px black solid;
+            border-bottom: 5px dashed black;
+        }
+        .event-part{
+            width:450px;
+            border: 2px black solid;
+            border-top: 5px dashed black;
+            height: 400px;
+        }
+        .event-title{
+font-size: 10px;
+    }
+    .logo
+     {
+        height: 200px;
+     }   
+    }
+ /* tablet */
+    @media  ( min-width:601px)and (max-width:800px){
+        .body-container{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+        .stud-part{
+            width:700px;
+            border: 2px black solid;
+            border-bottom: 5px dashed black;
+        }
+        .event-part{
+            width:700px;
+            border: 2px black solid;
+            border-top: 5px dashed black;
+            height: 400px;
+        }
+        .event-title{
+font-size: 20px;
+    }
+    .logo
+     {
+        height: 150px;
+     }       
+    }
+ /* laptop */
+ @media  ( min-width:801px)and (max-width:1024px){
+    @media  ( min-width:601px)and (max-width:800px){
+       
+        .stud-part{
+            width:300px;
+            border-right: 2px black solid;
+           border-bottom: none;
+        }
+        .event-part{
+            width:500px;
+            border: 2px black solid;
+           border-left: 5px dashed black;
+            height: 400px;
+        }
+        .event-title{
+font-size: 30px;
+    }
+     .logo
+     {
+        height: 200px;
+     }   
+    }   
+</style>
+</head>
+<body>
+    <div class="body-container">
+<div class="stud-part">
+    <h4 class="ticket-no">Stud_id:1020</h4>
+   <h2> <p class="event-title">Freshers Party</p></h2>
+   <img src="diploma.png" height="100px" width="160px">
+   <br>
+   <span>Venue:Parikrama college of engineering</span>
+<span>Time:10 to 3 Pm</span>
+
+</div>
+<div class="event-part">
+   <h4 class="ticket-no"> Event-part_id:5060</h4>
+   <h2><p  class="event-title">Freshers Party</p></h2>
+   <img src="diploma.png" class:"logo" height="100px" width="200px">
+   <br>
+   <br>
+   <span>Venue:Parikrama college of engineering</span>
+   <br>
+   <span>Time:10 to 3 Pm</span>
+   <br>
+
+    </div>
+</body>
+</html>
